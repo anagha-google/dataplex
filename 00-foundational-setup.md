@@ -8,7 +8,6 @@ This module covers the foundational setup required for Dataplex.
 | Module | Resource | 
 | -- | :--- |
 | 1 | [Foundational Setup](01-foundational-setup.md) |
-
 | 10 | [Clean up](10-clean-up.md) |
 
 
@@ -20,11 +19,19 @@ This module covers the foundational setup required for Dataplex.
 ## 1.0. Pre-requisites
 
 ### 1.a. Projects
-Before starting on this lab, you need two projects avaiable, we will enable different APIs on each.
-a) Primary project
-b) Secondary project
+Before starting on this lab, you need two projects avaiable, we will enable different APIs on each.<br>
+a) Primary project<br>
+b) Secondary project<br>
+
+Lab author's setup:
+
+| Project role | Project Name | | Project ID | Project Number | 
+| -- | :--- | :--- | :--- |
+| Primary | 
+| 10 | [Clean up](10-clean-up.md) |
 
 
+### 1.b. Create three groups for Dataplex
 
 
 ## 1.0. Variables
