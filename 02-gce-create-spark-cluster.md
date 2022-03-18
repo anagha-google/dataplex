@@ -170,6 +170,12 @@ The above command allows you to SSH to the master node. To SSH to the other node
 <br><br>
 
 <hr>
+
+## 5. Switch the endpoint protocol of the Dataproc Metastore
+
+
+
+
 This concludes the module. <br>
 
 [Next Module](03-run-spark-batch-jobs.md) 
