@@ -1,12 +1,8 @@
 # About
+This module should be executed in the **secondary project**. It involves creation of a bucket and copying data into it.
 
-## 1. Switch project context
 
-```
-gcloud config set project ${SECONDARY_PROJECT_ID}
-```
-
-## 2. Declare variables
+## 1. Declare variables
 
 Repasting the entire set of variables for simplicity-
 ```
@@ -59,14 +55,14 @@ HIVE_WAREHOUSE_BUCKET=$BASE_PREFIX-$PROJECT_NBR-hive-warehouse
 DATA_BUCKET_SECONDARY=$BASE_PREFIX-$PROJECT_NBR-data-sec
 ```
 
-## 3. Data setup for the lab
+## 2. Data setup for the lab
 
-### 3a. Create a bucket for the data
+### 2a. Create a bucket for the data
 ```
 gsutil mb -b on -l $LOCATION gs://${DATA_BUCKET_SECONDARY}
 ```
 
-### 3b. Copy a CSV dataset into the bucket
+### 2b. Copy a CSV dataset into the bucket
 
 ```
 gsutil cp gs://dataplex-demo-sme/bikeshare_trips_csv.csv gs://${DATA_BUCKET_SECONDARY}
