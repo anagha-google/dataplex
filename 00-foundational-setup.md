@@ -44,17 +44,17 @@ We will define variables used in this module.<br>
 Modify the variables as applicable for your environment and run the same in the cloud shell on the [cloud console](https://console.cloud.google.com)-
 
 ```
-#Any keyword that you can prefix to your resources for traceability and for uniqueness
-#for those services that require globally unique names. The Author has used "zeus" for base prefix
+#The base_prefix below, is any keyword that you can prefix to your resources for traceability and for uniqueness
+#for those services that require globally unique names. The author has used "zeus" for base prefix
 
 BASE_PREFIX="zeus"  
 
 #Replace with your details
-ORG_ID=<YOUR_LDAP>.altostrat.com                              
+ORG_ID=.altostrat.com                              
 ORG_ID_NBR=<YOUR_ORG_ID_NBR>
 ADMINISTRATOR_UPN_FQN=admin@$ORG_ID 
-PROJECT_ID=<YOUR_PROJECT_ID>
-PROJECT_NBR=<YOUR_PROJECT_ID_NBR>
+PRIMARY_PROJECT_ID=<YOUR_PROJECT_ID>
+PRIMARY_PROJECT_NBR=<YOUR_PROJECT_ID_NBR>
 
 #Your public IP address, to add to the firewall
 YOUR_CIDR=<YOUR_IP_ADDRESS>/32
