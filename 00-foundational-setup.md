@@ -37,14 +37,15 @@ Lab author's setup:
 | Secondary | zeus-dataplex-s | zeus-dataplex-s | 159402989543 |
 
 
-## 1.0. Variables
+## 1.0. Define variables in your primary project environment
 
-Below, we will define variables used in the module.<br>
-Modify as applicable for your environment and run the same in the cloud shell on the [cloud console](https://console.cloud.google.com)-
+In the cloud console, switch the project context to the primary project and launch the cloud shell.<br>
+We will define variables used in this module.<br>
+Modify the variables as applicable for your environment and run the same in the cloud shell on the [cloud console](https://console.cloud.google.com)-
 
 ```
 #Any keyword that you can prefix to your resources for traceability and for uniqueness
-#for those services that require globally unique names. The Author has used "vajra" for base prefix
+#for those services that require globally unique names. The Author has used "zeus" for base prefix
 
 BASE_PREFIX="zeus"  
 
