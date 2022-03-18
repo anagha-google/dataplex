@@ -101,6 +101,7 @@ gcloud services enable containerregistry.googleapis.com
 gcloud services enable bigquery.googleapis.com 
 gcloud services enable storage.googleapis.com
 gcloud services enable metastore.googleapis.com
+gcloud services enable dataplex.googleapis.com
 ```
 
 <br><br>
