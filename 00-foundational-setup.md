@@ -25,7 +25,8 @@ b) Secondary project<br>
 
 Lab author's setup:
 
-| Project role | Project Name | | Project ID | Project Number | 
+
+| Project role | Project Name | Project ID | Project Number | 
 | :-- | :--- | :--- | :--- |
 | Primary | zeus-dataplex-p | zeus-dataplex-p | 902769668277 |
 | Secondary | zeus-dataplex-s | zeus-dataplex-s | 159402989543 |
