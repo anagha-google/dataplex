@@ -510,14 +510,15 @@ This service does not support BYO subnet currently.<br>
 
 Run the command below to provision-
 ```
-gcloud metastore services create $DATAPROC_METASTORE_SERVICE_NM \
+gcloud beta metastore services create $DATAPROC_METASTORE_SERVICE_NM \
     --location=$LOCATION \
     --labels=used-by=all-$BASE_PREFIX-clusters \
     --network=$VPC_NM \
     --port=9083 \
     --tier=Developer \
     --hive-metastore-version=3.1.2 \
-    --impersonate-service-account=$UMSA_FQN 
+    --impersonate-service-account=$UMSA_FQN \
+    --endpoint-protocol=GRPC
 ```
 <br><br>
 
