@@ -50,11 +50,13 @@ Modify the variables as applicable for your environment and run the same in the 
 BASE_PREFIX="zeus"  
 
 #Replace with your details
-ORG_ID=.altostrat.com                              
-ORG_ID_NBR=<YOUR_ORG_ID_NBR>
+ORG_ID=akhanolkar.altostrat.com                              
+ORG_ID_NBR=236589261571
 ADMINISTRATOR_UPN_FQN=admin@$ORG_ID 
-PRIMARY_PROJECT_ID=<YOUR_PROJECT_ID>
-PRIMARY_PROJECT_NBR=<YOUR_PROJECT_ID_NBR>
+PRIMARY_PROJECT_ID=zeus-dataplex-p
+PRIMARY_PROJECT_NBR=902769668277
+SECONDARY_PROJECT_ID=zeus-dataplex-s
+SECONDARY_PROJECT_NBR=159402989543
 
 #Your public IP address, to add to the firewall
 YOUR_CIDR=<YOUR_IP_ADDRESS>/32
