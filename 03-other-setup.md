@@ -1,10 +1,11 @@
 
 # About
+This module covers the data setup for the and includes steps to be executed in the primary project.
 
 
+## 1. Declare variables 
 
-## 1. Variables to be declared in the primary project
-
+Declare variables in cloud shell, in the primary project's scope (in the author's case, its zeus-dataplex-p).
 
 ```
 #The base_prefix below, is any keyword that you can prefix to your resources for traceability and for uniqueness
