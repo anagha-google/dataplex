@@ -18,10 +18,15 @@ This module covers the foundational setup required for Dataplex.
 
 ## 1.0. Pre-requisites
 
-### 1.a. Projects
-Before starting on this lab, you need two projects avaiable, we will enable different APIs on each.<br>
-a) Primary project<br>
-b) Secondary project<br>
+### 1.a. Create three groups for Dataplex
+
+1. Go to admin.google.com
+2. Create a group called "Dataplex Owners"
+3. Create a group called "Dataplex Readers"
+4. Create a group called "Dataplex Writers"
+
+### 1.b. Projects
+Before starting on this lab, you need two projects avaiable, that will serve as primary and secondary, and we will enable different APIs on each.<br>
 
 Lab author's setup:
 
@@ -30,10 +35,6 @@ Lab author's setup:
 | :-- | :--- | :--- | :--- |
 | Primary | zeus-dataplex-p | zeus-dataplex-p | 902769668277 |
 | Secondary | zeus-dataplex-s | zeus-dataplex-s | 159402989543 |
-| 10 | [Clean up](10-clean-up.md) | | |
-
-
-### 1.b. Create three groups for Dataplex
 
 
 ## 1.0. Variables
@@ -45,7 +46,7 @@ Modify as applicable for your environment and run the same in the cloud shell on
 #Any keyword that you can prefix to your resources for traceability and for uniqueness
 #for those services that require globally unique names. The Author has used "vajra" for base prefix
 
-BASE_PREFIX="vajra"  
+BASE_PREFIX="zeus"  
 
 #Replace with your details
 ORG_ID=<YOUR_LDAP>.altostrat.com                              
