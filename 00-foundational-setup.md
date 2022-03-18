@@ -29,7 +29,7 @@ Lab author's setup:
 | :-- | :--- | :--- | :--- |
 | Primary | zeus-dataplex-p | zeus-dataplex-p | 902769668277 |
 | Secondary | zeus-dataplex-s | zeus-dataplex-s | 159402989543 |
-| 10 | [Clean up](10-clean-up.md) |
+| 10 | [Clean up](10-clean-up.md) | | |
 
 
 ### 1.b. Create three groups for Dataplex
