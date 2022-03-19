@@ -325,6 +325,20 @@ gcloud projects add-iam-policy-binding $PROJECT_ID --member=serviceAccount:$UMSA
 --role="roles/metastore.editor"
 ```
 
+### 3.e. Grant permissiosn related to Dataplex
+
+Grant the service account the Dataplex Admin role- 
+```
+gcloud projects add-iam-policy-binding $PROJECT_ID --member=serviceAccount:$UMSA_FQN \
+--role="roles/dataplex.admin"
+```
+
+Grant yourself the Dataplex Admin role-
+```
+gcloud projects add-iam-policy-binding $PROJECT_ID --member=user:$ADMINISTRATOR_UPN_FQN \
+--role="roles/dataplex.admin"
+```
+
 <hr>
 
 ## 4.0. Create VPC, Subnets and Firewall Rules
