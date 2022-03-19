@@ -183,10 +183,9 @@ The above command allows you to SSH to the master node. To SSH to the other node
 ## 5. Smoke test the Dataproc cluster
 
 ```
-gcloud dataproc batches submit spark \
---project=$PROJECT_ID \
+gcloud dataproc jobs submit spark \
+--cluster=${SPARK_GCE_NM} \
 --region=$LOCATION \
---subnet projects/$PROJECT_ID/regions/$LOCATION/subnetworks/$SPARK_GCE_SUBNET_NM \
 --jars=file:///usr/lib/spark/examples/jars/spark-examples.jar \
 --class org.apache.spark.examples.SparkPi -- 10000
 ```
