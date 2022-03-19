@@ -102,7 +102,7 @@ gcloud dataproc clusters create $SPARK_GCE_NM \
    --worker-boot-disk-size 500 \
    --image-version 2.0-debian10 \
    --tags $SPARK_GCE_NM \
-   --optional-components JUPYTER,PRESTO \
+   --optional-components JUPYTER \
    --initialization-actions gs://goog-dataproc-initialization-actions-${LOCATION}/connectors/connectors.sh \
    --metadata spark-bigquery-connector-version=0.23.2
 ```
@@ -176,8 +176,6 @@ The above command allows you to SSH to the master node. To SSH to the other node
 <br><br>
 
 <hr>
-
-## 5. Switch the endpoint protocol of the Dataproc Metastore
 
 
 
