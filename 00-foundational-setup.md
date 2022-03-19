@@ -92,6 +92,9 @@ HIVE_WAREHOUSE_BUCKET=$BASE_PREFIX-$PROJECT_NBR-hive-warehouse
 
 DATA_BUCKET_SECONDARY=$BASE_PREFIX-$PROJECT_NBR-data-sec
 
+SPARK_GCE_SUBNET_CIDR=10.0.0.0/16
+SPARK_CATCH_ALL_SUBNET_CIDR=10.6.0.0/24
+
 ```
 
 ## 2.0. Enable APIs
@@ -363,7 +366,7 @@ gcloud compute networks create $VPC_NM \
 Dataproc serverless Spark needs intra subnet open ingress. <br>
 Paste these and run in cloud shell-
 ```
-SPARK_GCE_SUBNET_CIDR=10.0.0.0/16
+
 
 gcloud compute networks subnets create $SPARK_GCE_SUBNET_NM \
  --network $VPC_NM \
@@ -417,7 +420,7 @@ Further in the lab, we will create a persistent Spark History Server where the l
 Paste these and run in cloud shell-
 
 ```
-SPARK_CATCH_ALL_SUBNET_CIDR=10.6.0.0/24
+
 
 gcloud compute networks subnets create $SPARK_CATCH_ALL_SUBNET_NM \
  --network $VPC_NM \
@@ -447,7 +450,22 @@ gcloud compute --project=$PROJECT_ID firewall-rules create allow-intra-$SPARK_CA
 
 <hr>
 
-### 4.d. Grant access to your IP address
+### 4.d. Allow ingress from between the two subnets
+
+```
+gcloud compute firewall-rules create allow-ingress-gce-catchall \
+--direction=INGRESS \
+--priority=1000 \
+--network=$VPC_NM \
+--action=ALLOW \
+--rules=all \
+--source-ranges=$SPARK_GCE_SUBNET_CIDR,$SPARK_CATCH_ALL_SUBNET_CIDR
+```
+ 
+<br><br>
+
+
+### 4.e. Grant access to your IP address
 
 ```
 gcloud compute firewall-rules create allow-ingress-from-office \
