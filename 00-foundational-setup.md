@@ -284,8 +284,6 @@ gcloud projects add-iam-policy-binding $PROJECT_ID --member=serviceAccount:$UMSA
 
 ```
 
-
-
 ![iam-2](images/01-07-iam.png)   
   
 <br><br>
@@ -334,6 +332,20 @@ Grant the service account the Dataplex Admin role-
 ```
 gcloud projects add-iam-policy-binding $PROJECT_ID --member=serviceAccount:$UMSA_FQN \
 --role="roles/dataplex.admin"
+```
+
+Grant yourself the Dataplex Admin role-
+```
+gcloud projects add-iam-policy-binding $PROJECT_ID --member=user:$ADMINISTRATOR_UPN_FQN \
+--role="roles/dataplex.admin"
+```
+
+### 3.f. Grant permissiosn related to Dataproc
+
+Grant the service account the Dataplex Admin role- 
+```
+gcloud projects add-iam-policy-binding $PROJECT_ID --member=serviceAccount:$UMSA_FQN \
+--role="roles/dataproc.admin"
 ```
 
 Grant yourself the Dataplex Admin role-
