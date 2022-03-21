@@ -36,6 +36,17 @@ Lab author's setup:
 | Primary | zeus-dataplex-p | zeus-dataplex-p | 902769668277 |
 | Secondary | zeus-dataplex-s | zeus-dataplex-s | 159402989543 |
 
+### 1.c. Permissions
+Before starting on this lab, set permissions on the primary project<br>
+
+#### 1. Grant yourself security admin role on the primary project<br>
+This is needed for the networking setup.<br>
+Go to Cloud IAM and through the UI, grant yourself security admin role.
+#### 2. Grant yourself Organization Policy Administrator at an Organization level<br>
+This is needed to set project level policies<br>
+In the UI, set context to organization level (instead of project)<br>
+Go to Cloud IAM and through the UI, grant yourself Organization Policy Administrator at an Organization level.<br>
+Don't forget to set the project back to the project you created in Step 1 above in the UI.
 
 ## 1.0. Define variables in your primary project environment
 
