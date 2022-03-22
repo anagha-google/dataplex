@@ -87,9 +87,20 @@ gcloud metastore services describe $DATAPROC_METASTORE_SERVICE_NM \
   --project $PROJECT_ID \
   --location $LOCATION \
   --format "value(endpointUri)"
-  ```
+```
 
+You shoudl see a response like-
+```
+https://zeus-dpms-7506e71f-kdqllmfxpq-uc.a.run.app:443
+```
 
-Create a Dataplex instance
+## 4. Create a Dataplex lake
+
+```
+gcloud alpha dataplex lakes create $LAKE_NM \
+ --location=$LOCATION \
+ --labels=project_id=$PROJECT_ID \
+ --metastore-service=projects/$PROJECT_ID/locations/$LOCATION/services/$DATAPROC_METASTORE_SERVICE_NM
+```
 
 
