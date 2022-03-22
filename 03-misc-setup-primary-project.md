@@ -81,7 +81,7 @@ bq --location=$LOCATION mk --dataset $BQ_DATASET_NM
 #### 2.d. Load the bikeshare dataset into BigQuery
 
 ```
-bq load --source_format=PARQUET BQ_DATASET_NM.bikeshare_trips_bq gs://${DATA_BUCKET}/bikeshare_trips_parquet.parquet
+bq load --source_format=PARQUET $BQ_DATASET_NM.bikeshare_trips_bq gs://${DATA_BUCKET}/bikeshare_trips_parquet.parquet
 ```
 
 #### 2.e. Create a bucket for the Hive warehouse
