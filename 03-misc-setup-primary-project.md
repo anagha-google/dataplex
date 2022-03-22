@@ -87,7 +87,7 @@ bq load --source_format=PARQUET $BQ_DATASET_NM.bikeshare_trips_bq gs://${DATA_BU
 #### 2.e. Create a bucket for the Hive warehouse
 
 ```
-gsutil mb -b on -l v gs://${HIVE_WAREHOUSE_BUCKET}
+gsutil mb -b on -l $LOCATION gs://${HIVE_WAREHOUSE_BUCKET}
 ```
 
 #### 2.f. Copy data into the Hive warehouse
