@@ -123,6 +123,7 @@ gcloud services enable storage.googleapis.com
 gcloud services enable metastore.googleapis.com
 gcloud services enable dataplex.googleapis.com
 gcloud services enable datacatalog.googleapis.com
+gcloud services enable cloudresourcemanager.googleapis.com
 ```
 
 <br><br>
