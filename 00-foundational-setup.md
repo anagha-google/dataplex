@@ -122,7 +122,7 @@ gcloud services enable bigquery.googleapis.com
 gcloud services enable storage.googleapis.com
 gcloud services enable metastore.googleapis.com
 gcloud services enable dataplex.googleapis.com
-gcloud services enable catalog.googleapis.com
+gcloud services enable datacatalog.googleapis.com
 ```
 
 <br><br>
