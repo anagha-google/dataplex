@@ -51,7 +51,7 @@ SPARK_GCE_SUBNET_NM=$SPARK_GCE_NM-snet
 SPARK_CATCH_ALL_SUBNET_NM=$BASE_PREFIX-misc-snet
 
 DATA_BUCKET=$BASE_PREFIX-$PROJECT_NBR-data
-BQ_DATASET_NM=$BASE_PREFIX_austin_bikeshare
+BQ_DATASET_NM=${BASE_PREFIX}_austin_bikeshare
 HIVE_WAREHOUSE_BUCKET=$BASE_PREFIX-$PROJECT_NBR-hive-warehouse
 
 DATA_BUCKET_SECONDARY=$BASE_PREFIX-$PROJECT_NBR-data-sec
@@ -70,7 +70,6 @@ gsutil mb -b on -l $LOCATION gs://${DATA_BUCKET}
 ```
 gsutil cp gs://dataplex-demo-sme/bikeshare_trips_parquet.parquet gs://${DATA_BUCKET}
 ```
-
 
 
 #### 2.c. Create a BigQuery dataset 
