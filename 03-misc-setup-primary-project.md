@@ -71,6 +71,8 @@ gsutil mb -b on -l $LOCATION gs://${DATA_BUCKET}
 gsutil cp gs://dataplex-demo-sme/bikeshare_trips_parquet.parquet gs://${DATA_BUCKET}
 ```
 
+
+
 #### 2.c. Create a BigQuery dataset 
 
 ```
